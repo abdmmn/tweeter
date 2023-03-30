@@ -1,7 +1,14 @@
-console.log('Hiiiii')
+
 
 $(document).ready(function() {
-  // --- our code goes here ---
-  console.log('Hiiiii')
+
+
+  const textareakeypress = document.getElementById("tweet-text");
+
+textareakeypress.addEventListener("keypress", () => {
+  console.log("this");
+});
+
 
 });
+
