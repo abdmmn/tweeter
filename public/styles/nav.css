@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png");
+  top: 0;
+  overflow: hidden;
+}
+
+.nav-left {
+  display: flex;
+  font-family: 'Bungee', cursive;
+  padding-left: 0.5em;
+  padding-bottom: 1.3em;
+  justify-content: flex-start;
+  flex-grow:1;
+}
+
+.nav-right{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-right: 0.5em;
+  flex-grow:1;
+  align-items: flex-end
+
+}
+

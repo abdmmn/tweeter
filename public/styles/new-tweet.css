@@ -1,0 +1,39 @@
+.new-tweet {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+form{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+
+.tweetcount{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  Padding-top: 0.5em;
+}
+
+button{
+  display: flex;
+  font-family: 'Bungee', cursive;
+
+  justify-content: flex-start;
+
+}
+
+textarea{
+  background-color: #f4f1ec ;
+  border:3px solid #f4f1ec;
+  border-bottom: 5px solid black;
+  color: black;
+
+}
+
