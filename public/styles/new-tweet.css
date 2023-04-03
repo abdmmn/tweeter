@@ -37,3 +37,11 @@ textarea{
 
 }
 
+#errorLong{
+  display: none;
+}
+
+
+#errorShort{
+  display: none;
+}
