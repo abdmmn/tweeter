@@ -1,12 +1,11 @@
 nav {
   display: flex;
   height: 120px;
-  background-color: #4056A1;
+  background-color: #03277ce3;
   color: #FFFFFF;
   align-items: center;
   width: 100%;
   position: fixed;
-  background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png");
   top: 0;
   overflow: hidden;
 }
@@ -27,6 +26,8 @@ nav {
   padding-right: 0.5em;
   flex-grow:1;
   align-items: flex-end
-
 }
 
+.arrowcontainer {
+  width: 30%;
+}

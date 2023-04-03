@@ -1,10 +1,45 @@
 .mainheader {
   display: flex;
   height: 520px;
-  background-color: #ffffff;
+  background-color: #03277ce3;
 background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
   justify-content: center;
   align-items: center;
   flex-direction:column;
-  padding-top: 120px;
+  margin-top: 120px;
+  width:  100%;
+}
+
+@media only screen and (min-width: 768px) {
+  body{
+    display:flex;
+  }
+  
+  nav {
+    flex-basis:100%;
+    background-color: #03277ce3;
+    background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png");  
+  }
+
+  .responsive {
+    display:flex;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .container{
+    flex-basis:50%;
+    margin-top: 120px;
+    margin-left:40px;
+  }
+
+  .main-header{
+    flex-basis:50%;
+    margin-top: 120px;
+    margin-left:40px;
+    margin-bottom: 40px;
+    background-image: none;
+    background-color: #03277ce3;
+
+  }
 }

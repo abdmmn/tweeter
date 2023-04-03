@@ -81,20 +81,20 @@ jQuery(document).ready(function () {
   event.preventDefault();
   
   let tweetLen = $(this).find('#tweet-text').val().length
-  if (tweetLen > 140) {
-    $("#errorLong").fadeIn().fadeOut(7000)
-  } else if (tweetLen === 0) {
-    $("#errorShort").fadeIn()
-  } else 
-    $.ajax({
-      url: '/tweets',
-      type: "POST",
-      data: $( this ).serialize(),
-      success: function() {
-        loadtweets()
-      },
-    });
- }
+    if (tweetLen > 140) {
+      $("#errorLong").fadeIn().fadeOut(7000)
+    } else if (tweetLen === 0) {
+      $("#errorShort").fadeIn().fadeOut(7000)
+    } else 
+      $.ajax({
+        url: '/tweets',
+        type: "POST",
+        data: $( this ).serialize(),
+        success: function() {
+          loadtweets()
+        },
+      });
+}
 
 function loadtweets() {
   $.ajax({
