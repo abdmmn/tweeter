@@ -34,12 +34,16 @@ const renderTweets = function(tweets) {
 // loops through tweets
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
+  $("#tweets-container").empty()
   for (const tweet of tweets) {
     
     const tweetslist = document.querySelector("#tweets-container");
     tweetslist.insertAdjacentHTML("afterbegin", createTweetElement(tweet));
 
   }
+  document.getElementById("tweet-text").value = ""
+  const $counter = $("output.counter")
+  $counter.text(140);
 }
 
 const createTweetElement = function(tweet) {
@@ -92,6 +96,7 @@ jQuery(document).ready(function () {
         data: $( this ).serialize(),
         success: function() {
           loadtweets()
+        
         },
       });
 }
@@ -106,6 +111,9 @@ function loadtweets() {
       console.log(tweets)
       renderTweets(tweets)
     },
+    error: function (error){
+      console.error(error);
+    }
   });
   }
  
