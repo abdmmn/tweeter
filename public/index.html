@@ -75,13 +75,13 @@
         <h2>Compose Tweet</h2>
         <form>
           <label >What are you humming about?</label>
+          <p id="errorLong">Too Long exceeded 140 character limit!. </p>
+          <p id="errorShort">Too Short. Please write something to send a tweet! </p>
           <textarea name="text" id="tweet-text"></textarea>
           <div class=tweetcount>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-          <p id="errorLong">Too Long exceeded 140 character limit!. </p>
-          <p id="errorShort">Too Short. Please write something to send a tweet! </p>
         </form>
       </section>
       

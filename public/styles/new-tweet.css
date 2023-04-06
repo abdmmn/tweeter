@@ -39,9 +39,16 @@ textarea{
 
 #errorLong{
   display: none;
+  color: red
 }
 
 
 #errorShort{
   display: none;
+  color: red
+
+}
+
+.overlimit{
+  color: red;
 }

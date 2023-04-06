@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // to change the color to red when characters exceed 140 by adding seperate class else remove that class.
     if (tweetLen < 0) {
-      return $counter.addClass('overlimit');
+      $counter.addClass('overlimit');
     } else {
       $counter.removeClass('overlimit');
     }
